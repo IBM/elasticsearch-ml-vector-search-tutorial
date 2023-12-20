@@ -1,0 +1,8 @@
+birdsnap
+.terraform
+.terraform*
+terraform.tfvars
+terraform.tfstate*
+*.jpg
+*.webp
+.DS_Store
