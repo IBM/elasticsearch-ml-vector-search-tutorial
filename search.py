@@ -42,5 +42,5 @@ q = {
 
 #this section generates an http request to the ES API to execute the search
 headers = {'Content-Type': 'application/json'}
-response = requests.get(es_url+'/images/_search', data=json.dumps(q), headers=headers, verify=False)
+response = requests.get(es_url+'/birds/_search', data=json.dumps(q), headers=headers, verify=False)
 print(json.dumps(response.json()))
