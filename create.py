@@ -15,7 +15,7 @@ es = Elasticsearch(es_url, verify_certs=False)
 request_body = {
   'mappings': {
 	  'properties': {
-	    'embeddings': {'dims':768, 'type': 'dense_vector','similarity':'cosine', 'index':True},
+	    'embeddings': {'dims':768, 'type': 'dense_vector','similarity':'l2_norm', 'index':True},
       'desc': {'type': 'text'} 
 	  }
   }
